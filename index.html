@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виселица</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="hangmanico.jpg" type="image/jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="modal">
+        <form id="settings" action="">
+            <h2>Настройки</h2>
+            <button type="button" id="singleplayer">Одиночная</button>
+            <button type="button" id="multiplayer">Мультиплеер</button>
+        </form>
+    </div>
+    <div id="wordModal">
+        <form id="wordCreation" action="">
+            <h2>Введи слово</h2>
+            <input type="text" id="wordInput" placeholder="Слово">
+            <button id="wordSubmit">Загадать</button>
+        </form>
+    </div>
+    <form action="">
+        <h1 id="title">Виселица</h1>
+        <h4 id="modeTitle">ㅤ</h3>
+        <img src="hangman0.png" alt="" id="picture">
+        <p id="shifr">***</p>
+        <input type="text" maxlength="1" placeholder="?" id="newLetter">
+        <button id="testButton">Проверить букву</button>
+        <button type="button" id="resetButton">Новая игра</button>
+        <button type="button" id="settingsButton">Настройки</button>
+        <p id="usedLetters">Использованные буквы:</p>
+    </form>
+    <p id="winText">Ты проиграл. Слово было ***.</p>
+
+    <script type="module" src="script.js"></script>
+</body>
