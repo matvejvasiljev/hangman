@@ -1,4 +1,5 @@
 import { ruswords } from "./words.js"
+
 let singleplayer = document.getElementById("singleplayer")
 let multiplayer = document.getElementById("multiplayer")
 let settingsButton = document.getElementById("settingsButton")
@@ -115,4 +116,5 @@ wordSubmit.onclick = function (event) {
     wordMenu.style.transform = "scale(0)"
     secret = wordInput.value
     newGame()
+    wordInput.value = ""
 }

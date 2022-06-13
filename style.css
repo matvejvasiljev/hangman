@@ -15,7 +15,8 @@ body {
     text-align: center;
 }
 
-#modal, #wordModal{
+#modal,
+#wordModal {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
     position: fixed;
@@ -25,9 +26,11 @@ body {
     height: 100%;
     transition: 0.2s;
     transform: scale(0);
+    z-index: 5;
 }
 
-#settings, #wordCreation{
+#settings,
+#wordCreation {
     top: 50%;
     left: 50%;
     position: absolute;
@@ -35,7 +38,8 @@ body {
     margin-top: 0;
 }
 
-#settings button, #settings h2{
+#settings button,
+#settings h2 {
     margin: 15px;
     margin-left: 2px;
     margin-right: 2px;
@@ -103,7 +107,7 @@ input {
     text-align: center;
 }
 
-#winText{
+#winText {
     padding: 20px;
     text-align: center;
     border-radius: 100px;
@@ -119,11 +123,13 @@ input {
     /* width: 90%; */
     box-sizing: border-box;
 }
-#modeTitle{
+
+#modeTitle {
     /* padding-left: 45px; */
     color: rgb(85, 85, 85);
 }
-#wordModal input{
+
+#wordModal input {
     font-size: 25px;
     line-height: 40px;
     height: 40px;
@@ -134,4 +140,34 @@ input {
     padding-right: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    #main{
+        margin-top: 20px;
+        padding: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #picture{
+        width: 70%;
+    }
+    #shifr{
+        margin: 5px;
+        margin-top: 15px;
+        font-size: 27px;
+        height: 40px;
+        padding: 0 5px;
+    }
+    #main button{
+        margin: 2px;
+    }
+    #main input{
+        margin-bottom: 3px;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
 }
